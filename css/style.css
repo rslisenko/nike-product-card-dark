@@ -1,14 +1,29 @@
-body{
+@font-face {
+    font-family: 'museo_sans_cyrl100';
+    src: url('../fonts/museosanscyrl-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
+html {
+	height: 100%;
+}
+html,
+body {
+	min-height: 100%;
+}
 
-
+body{
+	font: 100 14px/1.3 "museo_sans_cyrl100", Arial, sans-serif;
+	color: #fff;
+}
 
 /* Layout */
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 1200px;
+	padding-left: 7px;
+	padding-right: 7px;
+	max-width: 700px;
 }
 
 
@@ -59,4 +74,110 @@ select:focus {
 }
 textarea {
 
+}
+
+.ba-main {
+	padding: 100px 60px;
+	background: #FFF url(../img/main-bg.jpg) 50% no-repeat;
+	background-size: cover;
+}
+.ba-logo {
+	display: inline-block;
+	padding: 25px 20px 15px;
+}
+.ba-product {
+	background: #081323;
+	padding: 0 0 20px 0;
+}
+.ba-product-slider {
+	float: left;
+	width: 58%;
+	padding: 50px 0 0 0px;
+	text-align: center;
+}
+.ba-product-slider__indicators {
+	margin: 65px 0 0 20px;
+}
+.ba-product-slider__indicators label {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	margin-left: 6px;
+}
+.ba-product-slider__indicators label:nth-of-type(1) {
+	background: #293550;
+}
+.ba-product-slider__indicators label:nth-of-type(2) {
+	background: #FFFFFF;
+}
+.ba-product-slider__indicators label:nth-of-type(3) {
+	background: #F34B42;
+}
+.ba-product-slider__indicators label:nth-of-type(4) {
+	background: #24E7EE;
+}
+[class*="slider-item"] {
+	display: none;
+}
+[class*="slider-item"]:checked + label{
+	transform: scale(1.5);
+	border: 1px solid #aaa;
+}
+.ba-product-description {
+	float: right;
+	width: 42%;
+	padding: 0px 55px 20px 45px;
+}
+.ba-product-description__title {
+	font-size: 24px;
+	color: rgb(225, 225, 225);
+	line-height: 1.1;
+}
+.ba-product-description__subtitle {
+	font-size: 14px;
+	margin: 8px 0 0 0;
+	opacity: 0.55;
+}
+.ba-raiting {
+	display: inline-block;
+	margin: 20px 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+.ba-raiting li {
+	float: right;
+	margin-left: 1px;
+}
+.ba-raiting li input {
+	display: none;
+}
+.ba-raiting li:before {
+	 content: '\2605';
+}
+.ba-raiting li:hover,
+.ba-raiting li:hover ~ li:before {
+	color: #FAC919;
+}
+.ba-product-description__filter {
+	margin: 22px 0 0;
+	color: rgba(225, 225, 225, 0.55);
+}
+.ba-filter__select {
+	border: 1px solid rgba(225, 225, 225, 0.55);
+	background-color: #081323;
+	width: 70px;
+	height: 30px;
+}
+.ba-submit-btn {
+	margin: 30px 0 0;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgba(225, 225, 225, 0.55);
+	color: rgba(225, 225, 225, 0.55);
+	background-color: #081323;
+}
+.ba-submit-btn:hover {
+	background-color:#2A3545;
 }

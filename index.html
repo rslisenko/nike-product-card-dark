@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Start</title>
+	<title>Nike product</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,17 +15,70 @@
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<header class="ba-header">
-
-	</header>
-	<main>
-
-	</main>
-	<footer class="ba-footer">
-
-	</footer>
-</body>
-</html>
+		<![endif]-->
+	</head>
+	<body>
+		<main class="ba-main">
+			<!-- BEGIN ba-container  -->
+			<div class="ba-container">
+				<!-- BEGIN ba-product -->
+				<form action="#" class="ba-product">
+					<!-- BEGIB header  -->
+					<header class="ba-product-logo">
+						<a href="#" class="ba-logo">
+							<img src="img/logo.png">
+						</a>
+					</header>
+					<!-- END header -->
+					<section class="cf">
+						<!-- ba-product-slider -->
+						<div class="ba-product-slider">
+							<img src="img/Nike-SB-Stefan-Janoski-Max.png" class="ba-product-slider__img">
+							<div class="ba-product-slider__indicators">
+								<input type="radio" name="r" class="slider-item-1" id="slider-item-1" checked>
+								<label for="slider-item-1" ></label>
+								<input type="radio" name="r" class="slider-item-2" id="slider-item-2">
+								<label for="slider-item-2"></label>
+								<input type="radio" name="r" class="slider-item-3" id="slider-item-3">
+								<label for="slider-item-3"></label>
+								<input type="radio" name="r" class="slider-item-4" id="slider-item-4">
+								<label for="slider-item-4"></label>
+							</div>
+						</div>
+						<!-- END ba-product-slider -->
+						<!-- BEGIN ba-product-description  -->
+						<div class="ba-product-description">
+							<div class="ba-product-description__title">Nike SB Stefan Janoski Max</div>
+							<p class="ba-product-description__subtitle">Unisex Skateboarding Shoe </p>
+							<ul class="ba-raiting cf">
+								<li class="ba-star"></li>
+								<li class="ba-star"></li>
+								<li class="ba-star"></li>
+								<li class="ba-star"></li>
+								<li class="ba-star"></li>
+							</ul>
+							<!-- BEGIN ba-product-description__filter -->
+							<div class="ba-product-description__filter">
+								<select class="ba-filter__select">
+									<option>Size</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<select class="ba-filter__select">
+									<option>Qty</option>
+									<option value="100">100</option>
+									<option value="222">222</option>
+								</select>
+							</div>
+							<!-- END ba-product-description__filter -->
+							<button type="submit" class="ba-submit-btn">Add to cart</button>
+						</div>
+						<!-- END ba-product-description -->
+					</section>
+				</form>
+				<!-- END ba-product -->
+			</div>
+			<!-- END ba-container -->
+		</main>
+	</body>
+	</html>
